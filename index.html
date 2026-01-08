@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <title>Maze Chase</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="ui">
+    <div id="score">Score: 0</div>
+    <div id="level">Level: 1</div>
+    <div id="lives">Lives: 3</div>
+    <div id="high">High: 0</div>
+  </div>
+
+  <canvas id="game" tabindex="0" aria-label="Game canvas"></canvas>
+
+  <div id="touch">
+    <button data-dir="up" aria-label="Up">▲</button>
+    <div class="middle">
+      <button data-dir="left" aria-label="Left">◀</button>
+      <button data-dir="right" aria-label="Right">▶</button>
+    </div>
+    <button data-dir="down" aria-label="Down">▼</button>
+  </div>
+
+  <div id="overlay" hidden>
+    <div class="panel">
+      <h2 id="overlay-title">Paused</h2>
+      <p id="overlay-sub">Press any key or tap to continue</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
